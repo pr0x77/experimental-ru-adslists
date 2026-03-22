@@ -22,6 +22,8 @@ DOMAIN-SUFFIX,mytarget.com,REJECT,pre-matching
 DOMAIN-SUFFIX,mytarget.ru,REJECT,pre-matching
 DOMAIN-SUFFIX,target.my.com,REJECT,pre-matching
 # --- Yandex Ads / Metrica / AppMetrica ---
+DOMAIN-SUFFIX,hdrc.yandex.net,REJECT,pre-matching
+DOMAIN-SUFFIX,mds.yandex.net,REJECT,pre-matching
 DOMAIN-SUFFIX,counter.yadro.ru,REJECT,pre-matching
 DOMAIN-SUFFIX,mc.yandex.ru,REJECT,pre-matching
 DOMAIN-SUFFIX,metrika.yandex.ru,REJECT,pre-matching
