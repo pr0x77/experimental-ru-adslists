@@ -1,5 +1,5 @@
 # ===== Russian Ads / Tracking / Analytics (clean RULE set) =====
-# Type: RULE
+# Type: RULE-SET, REJECT
 # Policy in app: REJECT
 # Action defined per rule
 # Encoding: UTF-8
