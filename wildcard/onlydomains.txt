@@ -1,0 +1,89 @@
+# ===== Russian Ads / Tracking / Analytics (clean RULE set) =====
+# Type: DOMAIN-SET, REJECT
+# Policy in app: REJECT
+# Action defined per rule
+# Encoding: UTF-8
+
+recostream.go.mail.ru
+ads.mail.ru
+ad.mail.ru
+top.mail.ru
+rs.mail.ru
+r3.mail.ru
+xray.mail.ru
+reklama.mail.ru
+radar.imgsmail.ru
+ads.vk.com
+analytics.vk.com
+tracker.vk.com
+connect.ok.ru
+st-ok.cdn-vk.ru
+mytarget.com
+mytarget.ru
+target.my.com
+# --- Yandex Ads / Metrica / AppMetrica ---
+hdrc.yandex.net
+mds.yandex.net
+counter.yadro.ru
+mc.yandex.ru
+metrika.yandex.ru
+appmetrica.yandex.ru
+appmetrica.yandex.net
+adsdk.yandex.ru
+adfox.ru
+adfox.yandex.ru
+bs.yandex.ru
+bs-meta.yandex.ru
+an.yandex.ru
+yandexadexchange.net
+clck.yandex.ru
+static-mon.yandex.net
+log.strm.yandex.ru
+# --- Russian Ad Networks ---
+adriver.ru
+content.adriver.ru
+pb.adriver.ru
+smi2.ru
+target.smi2.net
+24smi.net
+img2.24smi.net
+advmaker.ru
+adaptv.ru
+weborama-tech.ru
+2xclick.ru
+leadback.ru
+directadvert.ru
+betweendigital.com
+# --- Russian Analytics / Session Replay ---
+webvisor.org
+mobile.webvisor.com
+startup.mobile.webvisor.com
+mindbox.ru
+diginetica.net
+calltracking.ru
+cc.calltracking.ru
+liveinternet.ru
+tns-counter.ru
+top100.ru
+# --- Russian Platforms Tracking ---
+analytics.avito.ru
+ads.avito.ru
+analytics.ozon.ru
+analytics.sber.ru
+ads.sber.ru
+sberads.com
+stat.wildberries.ru
+tracking.wb.ru
+# --- Дополнительный трекинг и аналитика ---
+comagic.ru
+uiscom.ru
+roistat.com
+lptracker.ru
+getrcmx.com
+mediametrics.ru
+rambler-co.ru
+counter.rambler.ru
+# --- Специфика мобильных приложений (App Tracking) ---
+adjust.com
+my.com
+vk.me
