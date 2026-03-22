@@ -4,6 +4,7 @@
 # Action defined per rule
 # Encoding: UTF-8
 
+DOMAIN-SUFFIX,recostream.go.mail.ru,REJECT,pre-matching
 DOMAIN-SUFFIX,ads.mail.ru,REJECT,pre-matching
 DOMAIN-SUFFIX,ad.mail.ru,REJECT,pre-matching
 DOMAIN-SUFFIX,top.mail.ru,REJECT,pre-matching
