@@ -1,24 +1,24 @@
-name: Optimize Blocklist
+name: List Optimizer
 on:
   push:
-    paths:
-      - 'wildcard/onlydomains.txt'
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
-  optimize:
+  cleanup:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Clean and Sort List
+      - uses: actions/checkout@v4
+      - name: Clean and Sort
         run: |
-          # Убираем комментарии, пустые строки, пробелы, удаляем дубликаты и сортируем
-          sed -i '/^#/d; /^[[:space:]]*$/d; s/[[:space:]]//g' wildcard/onlydomains.txt
-          sort -u wildcard/onlydomains.txt -o wildcard/onlydomains.txt
-          
-      - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v5
+          # Чистим рекламу
+          if [ -f rules/ru-ads.txt ]; then
+            sort -u rules/ru-ads.txt -o rules/ru-ads.txt
+          fi
+          # Чистим Apple
+          if [ -f rules/apple-all.txt ]; then
+            sort -u rules/apple-all.txt -o rules/apple-all.txt
+          fi
+      - uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Auto-optimize blocklist: remove duplicates and sort"
+          commit_message: "🤖 System: Оптимизация списков"
