@@ -1,49 +1,59 @@
 # ===== ALL Apple =====
-# Type: DOMAIN-SET
+# Type: RULE-SET
 # Policy in app: DIRECT or PROXY
 # Action defined per rule
 # Encoding: UTF-8
 
 # --- Основные сервисы Apple ---
-apple.com
-icloud.com
-icloud-content.com
-me.com
-mzstatic.com
-itunes.com
-itunes.apple.com
-apple-support.com
-apple-dns.net
-appsto.re
-apple.news
-applemusic.com
-
+DOMAIN-SUFFIX,apple.com
+DOMAIN-SUFFIX,icloud.com
+DOMAIN-SUFFIX,icloud-content.com
+DOMAIN-SUFFIX,me.com
+DOMAIN-SUFFIX,mzstatic.com
+DOMAIN-SUFFIX,itunes.com
+DOMAIN-SUFFIX,itunes.apple.com
+DOMAIN-SUFFIX,apple-support.com
+DOMAIN-SUFFIX,apple-dns.net
+DOMAIN-SUFFIX,appsto.re
+DOMAIN-SUFFIX,apple.news
+DOMAIN-SUFFIX,applemusic.com
 # --- Системная инфраструктура и Push ---
-push.apple.com
-cdn-apple.com
-apple-cloudkit.com
-apple-mapkit.com
-aaplimg.com
-apple-livephotoskit.com
-
+DOMAIN-SUFFIX,push.apple.com
+DOMAIN-SUFFIX,cdn-apple.com
+DOMAIN-SUFFIX,apple-cloudkit.com
+DOMAIN-SUFFIX,apple-mapkit.com
+DOMAIN-SUFFIX,aaplimg.com
+DOMAIN-SUFFIX,apple-livephotoskit.com
 # --- Технические и Open Source проекты Apple ---
-webkit.org
-swift.org
-cups.org
-calendarserver.org
-foundationdb.org
-servicetalk.io
-researchkit.org
-carekit.org
-researchandcare.org
-macruby.org
-macosforge.org
-wpewebkit.org
-webkitgtk.org
-webobjects.com
-
+DOMAIN-SUFFIX,webkit.org
+DOMAIN-SUFFIX,swift.org
+DOMAIN-SUFFIX,cups.org
+DOMAIN-SUFFIX,calendarserver.org
+DOMAIN-SUFFIX,foundationdb.org
+DOMAIN-SUFFIX,servicetalk.io
+DOMAIN-SUFFIX,researchkit.org
+DOMAIN-SUFFIX,carekit.org
+DOMAIN-SUFFIX,researchandcare.org
+DOMAIN-SUFFIX,macruby.org
+DOMAIN-SUFFIX,macosforge.org
+DOMAIN-SUFFIX,wpewebkit.org
+DOMAIN-SUFFIX,webkitgtk.org
+DOMAIN-SUFFIX,webobjects.com
 # --- Специфические CDN поддомены Apple (Безопасно) ---
 # Эти домены используются Akamai специально для Apple
-apple.com.edgekey.net
-icloud.com.edgekey.net
-itunes.apple.com.edgesuite.net
+DOMAIN-SUFFIX,apple.com.edgekey.net
+DOMAIN-SUFFIX,icloud.com.edgekey.net
+DOMAIN-SUFFIX,itunes.apple.com.edgesuite.net
+IP-CIDR,139.178.128.0/18,no-resolve
+IP-CIDR,144.178.0.0/19,no-resolve
+IP-CIDR,144.178.36.0/22,no-resolve
+IP-CIDR,144.178.48.0/20,no-resolve
+IP-CIDR,17.0.0.0/8,no-resolve
+IP-CIDR,192.35.50.0/24,no-resolve
+IP-CIDR,198.183.17.0/24,no-resolve
+IP-CIDR,205.180.175.0/24,no-resolve
+IP-CIDR,2403:300::/32,no-resolve
+IP-CIDR,2620:149::/32,no-resolve
+IP-CIDR,2a01:b740::/32,no-resolve
+IP-CIDR,63.92.224.0/19,no-resolve
+IP-CIDR,65.199.22.0/23,no-resolve
