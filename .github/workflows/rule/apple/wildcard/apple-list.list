@@ -1,0 +1,49 @@
+# ===== ALL Apple =====
+# Type: DOMAIN-SET
+# Policy in app: DIRECT or PROXY
+# Action defined per rule
+# Encoding: UTF-8
+
+# --- Основные сервисы Apple ---
+apple.com
+icloud.com
+icloud-content.com
+me.com
+mzstatic.com
+itunes.com
+itunes.apple.com
+apple-support.com
+apple-dns.net
+appsto.re
+apple.news
+applemusic.com
+
+# --- Системная инфраструктура и Push ---
+push.apple.com
+cdn-apple.com
+apple-cloudkit.com
+apple-mapkit.com
+aaplimg.com
+apple-livephotoskit.com
+
+# --- Технические и Open Source проекты Apple ---
+webkit.org
+swift.org
+cups.org
+calendarserver.org
+foundationdb.org
+servicetalk.io
+researchkit.org
+carekit.org
+researchandcare.org
+macruby.org
+macosforge.org
+wpewebkit.org
+webkitgtk.org
+webobjects.com
+
+# --- Специфические CDN поддомены Apple (Безопасно) ---
+# Эти домены используются Akamai специально для Apple
+apple.com.edgekey.net
+icloud.com.edgekey.net
+itunes.apple.com.edgesuite.net
