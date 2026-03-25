@@ -15,20 +15,9 @@
 
 ## 📥 Ссылки для копирования
 
-### 🚫 RU Ads & Trackers
 ```text
-# CDN (рекомендуется)
+🚫 Реклама и трекеры (RU)
 https://cdn.jsdelivr.net/gh/pr0x77/experimental-ru-adslists@main/rules/ru-ads.txt
 
-# Fallback (raw GitHub)
-https://raw.githubusercontent.com/pr0x77/experimental-ru-adslists/main/rules/ru-ads.txt
-
----
-
-### 🍏 Apple All
-```text
-# CDN (рекомендуется)
+🍏 Инфраструктура Apple (All)
 https://cdn.jsdelivr.net/gh/pr0x77/experimental-ru-adslists@main/rules/apple-all.txt
-
-# Fallback (raw GitHub)
-https://raw.githubusercontent.com/pr0x77/experimental-ru-adslists/main/rules/apple-all.txt
