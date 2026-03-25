@@ -1,8 +1,6 @@
 # --- Russian Ad Networks ---
 # --- Russian Analytics 
-# --- Russian Analytics 
 # --- Russian Platforms Tracking ---
-# --- Yandex Ads 
 # --- Yandex Ads 
 # --- Дополнительный трекинг и аналитика ---
 # --- Специфика мобильных приложений (App Tracking) ---
@@ -11,7 +9,6 @@
 # Encoding: UTF-8
 # Policy in app: REJECT
 # Type: DOMAIN-SET, REJECT
-
 24smi.net
 2xclick.ru
 ad.mail.ru
