@@ -8,8 +8,8 @@
 
 | Список | Тип правила | Действие |
 | :--- | :--- | :--- |
-| **🚫 Реклама (RU)** | REJECT | [➕ Добавить](shadowrocket://config/addrule?url=https://cdn.jsdelivr.net/gh/pr0x77/experimental-ru-adslists@main/rules/ru-ads.txt&type=REJECT) |
-| **🍏 Apple All** | DIRECT | [➕ Добавить](shadowrocket://config/addrule?url=https://cdn.jsdelivr.net/gh/pr0x77/experimental-ru-adslists@main/rules/apple-all.txt) |
+| **🚫 Реклама (RU)** | REJECT | (shadowrocket://config/addrule?url=https://cdn.jsdelivr.net/gh/pr0x77/experimental-ru-adslists@main/rules/ru-ads.txt&type=REJECT) |
+| **🍏 Apple All** | DIRECT | (shadowrocket://config/addrule?url=https://cdn.jsdelivr.net/gh/pr0x77/experimental-ru-adslists@main/rules/apple-all.txt) |
 
 ---
 
