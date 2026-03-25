@@ -1,8 +1,14 @@
-# ===== Russian Ads / Tracking / Analytics (clean RULE set) =====
-# Type: DOMAIN-SET, REJECT
-# Policy in app: REJECT
+# --- Russian Ad Networks ---
+# --- Russian Analytics 
+# --- Russian Platforms Tracking ---
+# --- Yandex Ads 
+# --- Дополнительный трекинг и аналитика ---
+# --- Специфика мобильных приложений (App Tracking) ---
+# ===== Russian Ads 
 # Action defined per rule
 # Encoding: UTF-8
+# Policy in app: REJECT
+# Type: DOMAIN-SET, REJECT
 
 api.mindbox.ru
 r.mradx.net
