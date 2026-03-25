@@ -1,4 +1,4 @@
-name: List Optimizer & Apple Updater
+name: List Optimizer & RU-Apple Updater
 on:
   push:
     branches: [ main ]
@@ -10,25 +10,39 @@ jobs:
   optimize:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout Repository
+        uses: actions/checkout@v4
 
+      # --- БЛОК APPLE ---
       - name: Fetch Official Apple Domains
         run: |
           # Вытягиваем домены со страницы Apple
           curl -s https://support.apple.com/en-us/HT210060 | grep -oE "([a-z0-9-]+\.)+(apple\.com|icloud\.com|apple-dns\.net|mzstatic\.com)" | sort -u > apple_official.txt
-          # Добавляем префикс DOMAIN-SUFFIX и объединяем с твоим файлом
+          # Добавляем префикс DOMAIN-SUFFIX
           sed -i 's/^/DOMAIN-SUFFIX,/' apple_official.txt
-          cat apple_official.txt rules/apple-all.txt | sort -u > temp.txt
-          mv temp.txt rules/apple-all.txt
+          # Объединяем, сортируем и убираем дубликаты
+          cat apple_official.txt rules/apple-all.txt | sort -u > temp_apple.txt
+          mv temp_apple.txt rules/apple-all.txt
           rm apple_official.txt
 
-      - name: Clean and Sort RU Ads
+      # --- БЛОК RU ADS (Авто-пополнение) ---
+      - name: Fetch and Clean RU Ads
         run: |
+          # Скачиваем базу AdGuard (Russian Filter)
+          curl -sSL https://filters.adtidy.org/extension/chromium/filters/1.txt -o adguard_ru.txt
+          # Вырезаем только чистые домены (убираем спецсимволы || и ^)
+          grep -E '^\|\|([a-z0-9]+(-[a-z0-9]+)*\.)+[a-z]{2,}\^' adguard_ru.txt | sed 's/||//g;s/\^//g' > cleaned_ru.txt
+          # Добавляем к твоим ручным правилам, сортируем и удаляем дубли
           if [ -f rules/ru-ads.txt ]; then
-            sort -u rules/ru-ads.txt -o rules/ru-ads.txt
+            cat cleaned_ru.txt rules/ru-ads.txt | sort -u | grep -v '^[[:space:]]*$' > temp_ru.txt
+            mv temp_ru.txt rules/ru-ads.txt
+          else
+            mv cleaned_ru.txt rules/ru-ads.txt
           fi
+          rm adguard_ru.txt cleaned_ru.txt
 
+      # --- ФИНАЛЬНЫЙ КОММИТ ---
       - name: Auto Commit
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "🤖 System: Списки оптимизированы и домены Apple обновлены"
+          commit_message: "🤖 System: Списки RU Ads и Apple обновлены и оптимизированы"
