@@ -25,14 +25,22 @@ jobs:
           mv temp_apple.txt rules/apple-all.txt
           rm apple_official.txt
 
-      # --- БЛОК RU ADS (Авто-пополнение) ---
+      # --- БЛОК RU ADS (Умная очистка) ---
       - name: Fetch and Clean RU Ads
         run: |
-          # Скачиваем базу AdGuard (Russian Filter)
+          # Скачиваем базу AdGuard
           curl -sSL https://filters.adtidy.org/extension/chromium/filters/1.txt -o adguard_ru.txt
-          # Вырезаем только чистые домены (убираем спецсимволы || и ^)
-          grep -E '^\|\|([a-z0-9]+(-[a-z0-9]+)*\.)+[a-z]{2,}\^' adguard_ru.txt | sed 's/||//g;s/\^//g' > cleaned_ru.txt
-          # Добавляем к твоим ручным правилам, сортируем и удаляем дубли
+          
+          # 1. Берем только строки, начинающиеся с || (это домены в AdBlock)
+          # 2. Убираем || в начале и ^ в конце
+          # 3. Убираем всё, что после $ (модификаторы)
+          # 4. Убираем строки, содержащие исключения ~ или запятые (сложные правила)
+          grep '^||' adguard_ru.txt | \
+          sed 's/||//g; s/\^//g; s/\$.*//g' | \
+          grep -v '[~,]' | \
+          sort -u > cleaned_ru.txt
+          
+          # Объединяем с твоим файлом
           if [ -f rules/ru-ads.txt ]; then
             cat cleaned_ru.txt rules/ru-ads.txt | sort -u | grep -v '^[[:space:]]*$' > temp_ru.txt
             mv temp_ru.txt rules/ru-ads.txt
