@@ -1,6 +1,8 @@
 # --- Russian Ad Networks ---
 # --- Russian Analytics 
+# --- Russian Analytics 
 # --- Russian Platforms Tracking ---
+# --- Yandex Ads 
 # --- Yandex Ads 
 # --- Дополнительный трекинг и аналитика ---
 # --- Специфика мобильных приложений (App Tracking) ---
@@ -9,89 +11,82 @@
 # Encoding: UTF-8
 # Policy in app: REJECT
 # Type: DOMAIN-SET, REJECT
-
-api.mindbox.ru
-r.mradx.net
-recostream.go.mail.ru
-ads.mail.ru
+24smi.net
+2xclick.ru
 ad.mail.ru
-top.mail.ru
-rs.mail.ru
-r3.mail.ru
-xray.mail.ru
-reklama.mail.ru
-radar.imgsmail.ru
-ads.vk.com
-analytics.vk.com
-tracker.vk.com
-connect.ok.ru
-st-ok.cdn-vk.ru
-mytarget.com
-mytarget.ru
-target.my.com
-# --- Yandex Ads / Metrica / AppMetrica ---
-hdrc.yandex.net
-mds.yandex.net
-counter.yadro.ru
-mc.yandex.ru
-metrika.yandex.ru
-appmetrica.yandex.ru
-appmetrica.yandex.net
-adsdk.yandex.ru
+adaptv.ru
 adfox.ru
 adfox.yandex.ru
-bs.yandex.ru
-bs-meta.yandex.ru
-an.yandex.ru
-yandexadexchange.net
-clck.yandex.ru
-static-mon.yandex.net
-log.strm.yandex.ru
-# --- Russian Ad Networks ---
+adjust.com
 adriver.ru
-content.adriver.ru
-pb.adriver.ru
-smi2.ru
-target.smi2.net
-24smi.net
-img2.24smi.net
-advmaker.ru
-adaptv.ru
-weborama-tech.ru
-2xclick.ru
-leadback.ru
-directadvert.ru
-betweendigital.com
-# --- Russian Analytics / Session Replay ---
-webvisor.org
-mobile.webvisor.com
-startup.mobile.webvisor.com
-mindbox.ru
-diginetica.net
-calltracking.ru
-cc.calltracking.ru
-liveinternet.ru
-tns-counter.ru
-top100.ru
-# --- Russian Platforms Tracking ---
-analytics.avito.ru
 ads.avito.ru
+ads.mail.ru
+ads.sber.ru
+ads.vk.com
+adsdk.yandex.ru
+advmaker.ru
+an.yandex.ru
+analytics.avito.ru
 analytics.ozon.ru
 analytics.sber.ru
-ads.sber.ru
-sberads.com
-stat.wildberries.ru
-tracking.wb.ru
-# --- Дополнительный трекинг и аналитика ---
+analytics.vk.com
+api.mindbox.ru
+appmetrica.yandex.net
+appmetrica.yandex.ru
+betweendigital.com
+bs-meta.yandex.ru
+bs.yandex.ru
+calltracking.ru
+cc.calltracking.ru
+clck.yandex.ru
 comagic.ru
-uiscom.ru
-roistat.com
-lptracker.ru
-getrcmx.com
-mediametrics.ru
-rambler-co.ru
+connect.ok.ru
+content.adriver.ru
 counter.rambler.ru
-# --- Специфика мобильных приложений (App Tracking) ---
-adjust.com
+counter.yadro.ru
+diginetica.net
+directadvert.ru
+getrcmx.com
+hdrc.yandex.net
+img2.24smi.net
+leadback.ru
+liveinternet.ru
+log.strm.yandex.ru
+lptracker.ru
+mc.yandex.ru
+mds.yandex.net
+mediametrics.ru
+metrika.yandex.ru
+mindbox.ru
+mobile.webvisor.com
 my.com
+mytarget.com
+mytarget.ru
+pb.adriver.ru
+r.mradx.net
+r3.mail.ru
+radar.imgsmail.ru
+rambler-co.ru
+recostream.go.mail.ru
+reklama.mail.ru
+roistat.com
+rs.mail.ru
+sberads.com
+smi2.ru
+st-ok.cdn-vk.ru
+startup.mobile.webvisor.com
+stat.wildberries.ru
+static-mon.yandex.net
+target.my.com
+target.smi2.net
+tns-counter.ru
+top.mail.ru
+top100.ru
+tracker.vk.com
+tracking.wb.ru
+uiscom.ru
 vk.me
+weborama-tech.ru
+webvisor.org
+xray.mail.ru
+yandexadexchange.net
