@@ -22,3 +22,13 @@ https://cdn.jsdelivr.net/gh/pr0x77/experimental-ru-adslists@main/rules/ru-ads.tx
 
 # Fallback (raw GitHub)
 https://raw.githubusercontent.com/pr0x77/experimental-ru-adslists/main/rules/ru-ads.txt
+
+---
+
+### 🍏 Apple All
+```text
+# CDN (рекомендуется)
+https://cdn.jsdelivr.net/gh/pr0x77/experimental-ru-adslists@main/rules/apple-all.txt
+
+# Fallback (raw GitHub)
+https://raw.githubusercontent.com/pr0x77/experimental-ru-adslists/main/rules/apple-all.txt
