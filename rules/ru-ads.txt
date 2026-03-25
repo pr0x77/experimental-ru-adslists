@@ -11,6 +11,7 @@
 # Encoding: UTF-8
 # Policy in app: REJECT
 # Type: DOMAIN-SET, REJECT
+
 24smi.net
 2xclick.ru
 ad.mail.ru
