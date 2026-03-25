@@ -1,49 +1,49 @@
-# ===== ALL Apple =====
-# Type: RULE-SET
-# Policy in app: DIRECT or PROXY
-# Action defined per rule
-# Encoding: UTF-8
 
 # --- Основные сервисы Apple ---
-DOMAIN-SUFFIX,apple.com
-DOMAIN-SUFFIX,icloud.com
-DOMAIN-SUFFIX,icloud-content.com
-DOMAIN-SUFFIX,me.com
-DOMAIN-SUFFIX,mzstatic.com
-DOMAIN-SUFFIX,itunes.com
-DOMAIN-SUFFIX,itunes.apple.com
-DOMAIN-SUFFIX,apple-support.com
+# --- Системная инфраструктура и Push ---
+# --- Специфические CDN поддомены Apple (Безопасно) ---
+# --- Технические и Open Source проекты Apple ---
+# ===== ALL Apple =====
+# Action defined per rule
+# Encoding: UTF-8
+# Policy in app: DIRECT or PROXY
+# Type: RULE-SET
+# Эти домены используются Akamai специально для Apple
+DOMAIN-SUFFIX,aaplimg.com
+DOMAIN-SUFFIX,apple-cloudkit.com
 DOMAIN-SUFFIX,apple-dns.net
-DOMAIN-SUFFIX,appsto.re
+DOMAIN-SUFFIX,apple-livephotoskit.com
+DOMAIN-SUFFIX,apple-mapkit.com
+DOMAIN-SUFFIX,apple-support.com
+DOMAIN-SUFFIX,apple.com
+DOMAIN-SUFFIX,apple.com.edgekey.net
 DOMAIN-SUFFIX,apple.news
 DOMAIN-SUFFIX,applemusic.com
-# --- Системная инфраструктура и Push ---
-DOMAIN-SUFFIX,push.apple.com
-DOMAIN-SUFFIX,cdn-apple.com
-DOMAIN-SUFFIX,apple-cloudkit.com
-DOMAIN-SUFFIX,apple-mapkit.com
-DOMAIN-SUFFIX,aaplimg.com
-DOMAIN-SUFFIX,apple-livephotoskit.com
-# --- Технические и Open Source проекты Apple ---
-DOMAIN-SUFFIX,webkit.org
-DOMAIN-SUFFIX,swift.org
-DOMAIN-SUFFIX,cups.org
+DOMAIN-SUFFIX,appsto.re
 DOMAIN-SUFFIX,calendarserver.org
-DOMAIN-SUFFIX,foundationdb.org
-DOMAIN-SUFFIX,servicetalk.io
-DOMAIN-SUFFIX,researchkit.org
 DOMAIN-SUFFIX,carekit.org
-DOMAIN-SUFFIX,researchandcare.org
-DOMAIN-SUFFIX,macruby.org
+DOMAIN-SUFFIX,cdn-apple.com
+DOMAIN-SUFFIX,cups.org
+DOMAIN-SUFFIX,foundationdb.org
+DOMAIN-SUFFIX,icloud-content.com
+DOMAIN-SUFFIX,icloud.com
+DOMAIN-SUFFIX,icloud.com.edgekey.net
+DOMAIN-SUFFIX,itunes.apple.com
+DOMAIN-SUFFIX,itunes.apple.com.edgesuite.net
+DOMAIN-SUFFIX,itunes.com
 DOMAIN-SUFFIX,macosforge.org
-DOMAIN-SUFFIX,wpewebkit.org
+DOMAIN-SUFFIX,macruby.org
+DOMAIN-SUFFIX,me.com
+DOMAIN-SUFFIX,mzstatic.com
+DOMAIN-SUFFIX,push.apple.com
+DOMAIN-SUFFIX,researchandcare.org
+DOMAIN-SUFFIX,researchkit.org
+DOMAIN-SUFFIX,servicetalk.io
+DOMAIN-SUFFIX,swift.org
+DOMAIN-SUFFIX,webkit.org
 DOMAIN-SUFFIX,webkitgtk.org
 DOMAIN-SUFFIX,webobjects.com
-# --- Специфические CDN поддомены Apple (Безопасно) ---
-# Эти домены используются Akamai специально для Apple
-DOMAIN-SUFFIX,apple.com.edgekey.net
-DOMAIN-SUFFIX,icloud.com.edgekey.net
-DOMAIN-SUFFIX,itunes.apple.com.edgesuite.net
+DOMAIN-SUFFIX,wpewebkit.org
 IP-CIDR,139.178.128.0/18,no-resolve
 IP-CIDR,144.178.0.0/19,no-resolve
 IP-CIDR,144.178.36.0/22,no-resolve
