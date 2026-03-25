@@ -3,7 +3,7 @@ on:
   push:
     branches: [ main ]
   schedule:
-    - cron: '0 0 * * 1' # Запуск каждый понедельник в полночь
+    - cron: '0 0 * * 1'
   workflow_dispatch:
 
 jobs:
@@ -13,44 +13,29 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      # --- БЛОК APPLE ---
+      # --- БЛОК APPLE (Оставляем как есть, он полезен) ---
       - name: Fetch Official Apple Domains
         run: |
-          # Вытягиваем домены со страницы Apple
           curl -s https://support.apple.com/en-us/HT210060 | grep -oE "([a-z0-9-]+\.)+(apple\.com|icloud\.com|apple-dns\.net|mzstatic\.com)" | sort -u > apple_official.txt
-          # Добавляем префикс DOMAIN-SUFFIX
           sed -i 's/^/DOMAIN-SUFFIX,/' apple_official.txt
-          # Объединяем, сортируем и убираем дубликаты
           cat apple_official.txt rules/apple-all.txt | sort -u > temp_apple.txt
           mv temp_apple.txt rules/apple-all.txt
           rm apple_official.txt
 
-      # --- БЛОК RU ADS (Умная очистка) ---
-      - name: Fetch and Clean RU Ads
+      # --- БЛОК RU ADS (Фокус на трекеры и аналитику) ---
+      - name: Clean and Sort RU Ads
         run: |
-          # Скачиваем базу AdGuard
-          curl -sSL https://filters.adtidy.org/extension/chromium/filters/1.txt -o adguard_ru.txt
-          
-          # 1. Берем только строки, начинающиеся с || (это домены в AdBlock)
-          # 2. Убираем || в начале и ^ в конце
-          # 3. Убираем всё, что после $ (модификаторы)
-          # 4. Убираем строки, содержащие исключения ~ или запятые (сложные правила)
-          grep '^||' adguard_ru.txt | \
-          sed 's/||//g; s/\^//g; s/\$.*//g' | \
-          grep -v '[~,]' | \
-          sort -u > cleaned_ru.txt
-          
-          # Объединяем с твоим файлом
+          # 1. Если хочешь, чтобы скрипт сам ничего не качал, а только чистил ТВОЙ файл:
           if [ -f rules/ru-ads.txt ]; then
-            cat cleaned_ru.txt rules/ru-ads.txt | sort -u | grep -v '^[[:space:]]*$' > temp_ru.txt
-            mv temp_ru.txt rules/ru-ads.txt
-          else
-            mv cleaned_ru.txt rules/ru-ads.txt
+            # Убираем мусорные пути (все что после /), оставляем только домены
+            sed -i 's/\/.*//g' rules/ru-ads.txt
+            # Удаляем строки с параметрами $, чистим дубли и пустые строки
+            sed -i 's/\$.*//g' rules/ru-ads.txt
+            sort -u rules/ru-ads.txt -o rules/ru-ads.txt
+            grep -v '^[[:space:]]*$' rules/ru-ads.txt > temp_ru.txt && mv temp_ru.txt rules/ru-ads.txt
           fi
-          rm adguard_ru.txt cleaned_ru.txt
 
-      # --- ФИНАЛЬНЫЙ КОММИТ ---
       - name: Auto Commit
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "🤖 System: Списки RU Ads и Apple обновлены и оптимизированы"
+          commit_message: "🤖 System: Списки оптимизированы и домены Apple обновлены"
