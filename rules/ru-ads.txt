@@ -20,7 +20,6 @@ adriver.ru
 ads.avito.ru
 ads.mail.ru
 ads.sber.ru
-vk.com
 adsdk.yandex.ru
 advmaker.ru
 an.yandex.ru
@@ -83,6 +82,7 @@ top100.ru
 tracker.vk.com
 tracking.wb.ru
 uiscom.ru
+vk.com
 vk.me
 weborama-tech.ru
 webvisor.org
