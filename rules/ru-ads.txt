@@ -20,7 +20,7 @@ adriver.ru
 ads.avito.ru
 ads.mail.ru
 ads.sber.ru
-ads.vk.com
+vk.com
 adsdk.yandex.ru
 advmaker.ru
 an.yandex.ru
