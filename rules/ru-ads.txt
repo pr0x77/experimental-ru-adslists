@@ -8,6 +8,14 @@
 # Action defined per rule
 # Encoding: UTF-8
 # Policy in app: REJECT
+.mail.ru
+.yandex.ru
+.yandex.net
+.yadic.jp
+.yandexadexchange.net
+.yandex.st
+.yastatic.net
+.doubleclick.net
 .adaptv.ru
 .adfox.ru
 .adjust.com
@@ -30,7 +38,6 @@
 .vk.me
 .vk.ru
 .webvisor.org
-.yandex.net
 .yandexadexchange.net
 24smi.net
 2xclick.ru
