@@ -8,6 +8,10 @@
 # Action defined per rule
 # Encoding: UTF-8
 # Policy in app: REJECT
+rambler.ru
+dzeninfra.ru
+privacy-cs.mail.ru
+vk-analytics.ru
 24smi.net
 2xclick.ru
 ad.mail.ru
