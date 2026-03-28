@@ -8,8 +8,6 @@
 # Action defined per rule
 # Encoding: UTF-8
 # Policy in app: REJECT
-.visor.sberbank.ru
-.imgsmail.ru
 .adaptv.ru
 .adfox.ru
 .adjust.com
@@ -18,11 +16,14 @@
 .comagic.ru
 .dzeninfra.ru
 .getrcmx.com
+.imgsmail.ru
 .mindbox.ru
 .mradx.net
 .mytarget.ru
 .ok.ru
 .rambler.ru
+.top100.ru
+.visor.sberbank.ru
 .vk-analytics.ru
 .vk.com
 .vk.me
@@ -88,7 +89,6 @@ target.my.com
 target.smi2.net
 tns-counter.ru
 top.mail.ru
-.top100.ru
 tracker.vk.com
 tracking.wb.ru
 uiscom.ru
