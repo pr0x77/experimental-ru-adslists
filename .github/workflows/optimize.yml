@@ -31,12 +31,23 @@ jobs:
       - name: Clean and Sort RU Ads
         run: |
           if [ -f rules/ru-ads.txt ]; then
-            # Убираем всё после / и $
-            sed -i 's/\/.*//g' rules/ru-ads.txt
-            sed -i 's/\$.*//g' rules/ru-ads.txt
-            # Чистим дубли и пустые строки
-            sort -u rules/ru-ads.txt -o rules/ru-ads.txt
-            grep -v '^[[:space:]]*$' rules/ru-ads.txt > temp_ru.txt && mv temp_ru.txt rules/ru-ads.txt
+            # 1. Сохраняем первые 10 строк (твою шапку с описанием) во временный файл
+            head -n 10 rules/ru-ads.txt | grep '^#' > header.tmp
+            
+            # 2. Берем всё остальное, чистим от мусора, путей, пробелов и комментариев
+            # sed удаляет / и всё после него, удаляет $ и всё после него
+            # grep -v '^#' удаляет все комментарии из середины списка
+            # sed 's/[[:space:]]//g' удаляет все случайные пробелы (из-за которых дублился vk.com)
+            grep -v '^#' rules/ru-ads.txt | sed 's/\/.*//g; s/\$.*//g; s/[[:space:]]//g' > body.tmp
+            
+            # 3. Сортируем тело списка и удаляем дубликаты
+            sort -u body.tmp > body_sorted.tmp
+            
+            # 4. Собираем файл обратно: Шапка + Очищенное тело
+            cat header.tmp body_sorted.tmp | grep -v '^[[:space:]]*$' > rules/ru-ads.txt
+            
+            # Чистим за собой
+            rm header.tmp body.tmp body_sorted.tmp
           fi
 
       # --- ФИНАЛЬНЫЙ КОММИТ ---
