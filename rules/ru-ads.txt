@@ -8,10 +8,6 @@
 # Action defined per rule
 # Encoding: UTF-8
 # Policy in app: REJECT
-rambler.ru
-dzeninfra.ru
-privacy-cs.mail.ru
-vk-analytics.ru
 24smi.net
 2xclick.ru
 ad.mail.ru
@@ -46,6 +42,7 @@ counter.rambler.ru
 counter.yadro.ru
 diginetica.net
 directadvert.ru
+dzeninfra.ru
 getrcmx.com
 hdrc.yandex.net
 img2.24smi.net
@@ -64,10 +61,12 @@ mytarget.com
 mytarget.ru
 ok.ru
 pb.adriver.ru
+privacy-cs.mail.ru
 r.mradx.net
 r3.mail.ru
 radar.imgsmail.ru
 rambler-co.ru
+rambler.ru
 recostream.go.mail.ru
 reklama.mail.ru
 roistat.com
@@ -86,6 +85,7 @@ top100.ru
 tracker.vk.com
 tracking.wb.ru
 uiscom.ru
+vk-analytics.ru
 vk.com
 vk.me
 weborama-tech.ru
