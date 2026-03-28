@@ -8,6 +8,7 @@
 # Action defined per rule
 # Encoding: UTF-8
 # Policy in app: REJECT
+.icmp0.ru
 .adaptv.ru
 .adfox.ru
 .adjust.com
