@@ -8,6 +8,7 @@
 # Action defined per rule
 # Encoding: UTF-8
 # Policy in app: REJECT
+.rambler.ru
 24smi.net
 2xclick.ru
 ad.mail.ru
@@ -66,7 +67,6 @@ r.mradx.net
 r3.mail.ru
 radar.imgsmail.ru
 rambler-co.ru
-.rambler.ru
 recostream.go.mail.ru
 reklama.mail.ru
 roistat.com
