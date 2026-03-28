@@ -22,6 +22,7 @@
 .ok.ru
 .rambler.ru
 .vk.com
+.vk.ru
 .vk.me
 .webvisor.org
 24smi.net
@@ -51,7 +52,7 @@ counter.rambler.ru
 counter.yadro.ru
 diginetica.net
 directadvert.ru
-hdrc.yandex.net
+.yandex.net
 img2.24smi.net
 leadback.ru
 liveinternet.ru
@@ -87,7 +88,7 @@ top100.ru
 tracker.vk.com
 tracking.wb.ru
 uiscom.ru
-vk-analytics.ru
+.vk-analytics.ru
 weborama-tech.ru
 xray.mail.ru
-yandexadexchange.net
+.yandexadexchange.net
