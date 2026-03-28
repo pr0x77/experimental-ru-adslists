@@ -8,20 +8,30 @@
 # Action defined per rule
 # Encoding: UTF-8
 # Policy in app: REJECT
+.adaptv.ru
+.adfox.ru
+.adjust.com
+.adriver.ru
+.advmaker.ru
+.comagic.ru
+.dzeninfra.ru
+.getrcmx.com
+.mindbox.ru
+.mradx.net
+.mytarget.ru
+.ok.ru
 .rambler.ru
+.vk.com
+.vk.me
+.webvisor.org
 24smi.net
 2xclick.ru
 ad.mail.ru
-.adaptv.ru
-.adfox.ru
 adfox.yandex.ru
-.adjust.com
-.adriver.ru
 ads.avito.ru
 ads.mail.ru
 ads.sber.ru
 adsdk.yandex.ru
-.advmaker.ru
 an.yandex.ru
 analytics.avito.ru
 analytics.ozon.ru
@@ -36,15 +46,11 @@ bs.yandex.ru
 calltracking.ru
 cc.calltracking.ru
 clck.yandex.ru
-.comagic.ru
-.ok.ru
 content.adriver.ru
 counter.rambler.ru
 counter.yadro.ru
 diginetica.net
 directadvert.ru
-.dzeninfra.ru
-.getrcmx.com
 hdrc.yandex.net
 img2.24smi.net
 leadback.ru
@@ -55,14 +61,11 @@ mc.yandex.ru
 mds.yandex.net
 mediametrics.ru
 metrika.yandex.ru
-.mindbox.ru
 mobile.webvisor.com
 my.com
 mytarget.com
-.mytarget.ru
 pb.adriver.ru
 privacy-cs.mail.ru
-.mradx.net
 r3.mail.ru
 radar.imgsmail.ru
 rambler-co.ru
@@ -85,9 +88,6 @@ tracker.vk.com
 tracking.wb.ru
 uiscom.ru
 vk-analytics.ru
-.vk.com
-.vk.me
 weborama-tech.ru
-.webvisor.org
 xray.mail.ru
 yandexadexchange.net
