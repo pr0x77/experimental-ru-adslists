@@ -13,6 +13,8 @@
 .adjust.com
 .adriver.ru
 .advmaker.ru
+.appmetrica.com
+.appmetrica.io
 .comagic.ru
 .doubleclick.net
 .dzeninfra.ru
@@ -33,10 +35,12 @@
 .vk.ru
 .webvisor.org
 .yadic.jp
+.yandex.com
 .yandex.net
 .yandex.ru
 .yandex.st
 .yandexadexchange.net
+.yandexmetrica.com
 .yastatic.net
 24smi.net
 2xclick.ru
