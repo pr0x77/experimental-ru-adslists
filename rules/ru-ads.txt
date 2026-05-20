@@ -108,3 +108,4 @@
 .yandexadexchange.net
 .yandexmetrica.com
 .yastatic.net
+.tracking.ozon.ru
