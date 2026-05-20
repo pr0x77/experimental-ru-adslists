@@ -90,6 +90,7 @@
 .top.mail.ru
 .top100.ru
 .tracker.vk.com
+.tracking.ozon.ru
 .tracking.wb.ru
 .uiscom.ru
 .visor.sberbank.ru
@@ -108,4 +109,3 @@
 .yandexadexchange.net
 .yandexmetrica.com
 .yastatic.net
-.tracking.ozon.ru
