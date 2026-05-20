@@ -107,3 +107,4 @@
 .yandexadexchange.net
 .yandexmetrica.com
 .yastatic.net
+.ozonusercontent.com
