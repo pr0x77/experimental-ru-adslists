@@ -49,6 +49,7 @@
 .icmp0.ru
 .img2.24smi.net
 .imgsmail.ru
+.ingest.us.sentry.io
 .leadback.ru
 .liveinternet.ru
 .log.strm.yandex.ru
@@ -109,4 +110,3 @@
 .yandexadexchange.net
 .yandexmetrica.com
 .yastatic.net
-.ingest.us.sentry.io
