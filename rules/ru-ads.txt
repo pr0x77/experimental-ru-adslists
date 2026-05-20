@@ -67,6 +67,7 @@
 .ok.ru
 .ozon.kz
 .ozonru.me
+.ozonusercontent.com
 .pb.adriver.ru
 .privacy-cs.mail.ru
 .r3.mail.ru
@@ -107,4 +108,3 @@
 .yandexadexchange.net
 .yandexmetrica.com
 .yastatic.net
-.ozonusercontent.com
