@@ -109,3 +109,4 @@
 .yandexadexchange.net
 .yandexmetrica.com
 .yastatic.net
+.ingest.us.sentry.io
