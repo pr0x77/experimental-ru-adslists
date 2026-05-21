@@ -91,7 +91,6 @@
 .top.mail.ru
 .top100.ru
 .tracker.vk.com
-.tracking.ozon.ru
 .tracking.wb.ru
 .uiscom.ru
 .visor.sberbank.ru
