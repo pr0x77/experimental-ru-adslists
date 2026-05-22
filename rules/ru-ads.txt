@@ -68,7 +68,6 @@
 .ok.ru
 .ozon.kz
 .ozonru.me
-.ozonusercontent.com
 .pb.adriver.ru
 .privacy-cs.mail.ru
 .r3.mail.ru
