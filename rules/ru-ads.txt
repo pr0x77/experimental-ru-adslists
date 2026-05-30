@@ -106,6 +106,6 @@
 .yandex.ru
 .yandex.st
 .yandexadexchange.net
+.yandexcloud.net
 .yandexmetrica.com
 .yastatic.net
-.yandexcloud.net
