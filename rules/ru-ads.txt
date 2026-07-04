@@ -109,3 +109,4 @@
 .yandexcloud.net
 .yandexmetrica.com
 .yastatic.net
+.ya.ru
