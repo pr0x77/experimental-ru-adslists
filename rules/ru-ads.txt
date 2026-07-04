@@ -100,6 +100,7 @@
 .weborama-tech.ru
 .webvisor.org
 .xray.mail.ru
+.ya.ru
 .yadic.jp
 .yandex.com
 .yandex.net
@@ -109,4 +110,3 @@
 .yandexcloud.net
 .yandexmetrica.com
 .yastatic.net
-.ya.ru
