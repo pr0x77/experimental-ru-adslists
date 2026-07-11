@@ -10,6 +10,7 @@
 | :--- | :--- | :--- |
 | 🚫 RU Ads & Trackers | Реклама и трекеры РФ | REJECT |
 | 🍏 Apple All | Инфраструктура Apple | DIRECT / PROXY |
+| 🚫 RU uBlock Origin | RU | REJECT |
 
 ---
 
@@ -26,3 +27,9 @@
   https://cdn.jsdelivr.net/gh/pr0x77/experimental-ru-adslists@main/rules/apple-all.txt
 - **raw (fallback):**  
   https://raw.githubusercontent.com/pr0x77/experimental-ru-adslists/refs/heads/main/rules/apple-all.txt
+
+### 🚫 uBlock Origin (RU)
+- **jsDelivr (CDN):**  
+  https://cdn.jsdelivr.net/gh/pr0x77/experimental-ru-adslists/blob/main/rules/RuBlock-Origin.txt
+- **raw (fallback):**  
+  https://raw.githubusercontent.com/pr0x77/experimental-ru-adslists/blob/main/rules/RuBlock-Origin.txt
