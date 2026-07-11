@@ -60,13 +60,11 @@
 ||yandex.ua^
 ||yandex.uz^
 ||yadi.sk^
-||yandex.net^
 ||yastatic.net^
 ||yandexadexchange.net^
 ||yandexcloud.net^
 ||yandexmetrica.com^
 ||yandex.ru^
-||ya.ru^
 ||dzen.ru^
 ||dzeninfra.ru^
 ||mail.ru^
