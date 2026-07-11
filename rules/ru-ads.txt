@@ -44,6 +44,7 @@
 .diginetica.net
 .directadvert.ru
 .doubleclick.net
+.dzen.ru
 .dzeninfra.ru
 .getrcmx.com
 .icmp0.ru
@@ -110,4 +111,3 @@
 .yandexcloud.net
 .yandexmetrica.com
 .yastatic.net
-.dzen.ru
