@@ -110,3 +110,4 @@
 .yandexcloud.net
 .yandexmetrica.com
 .yastatic.net
+.dzen.ru
