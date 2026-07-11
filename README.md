@@ -30,6 +30,6 @@
 
 ### 🚫 uBlock Origin (RU)
 - **jsDelivr (CDN):**  
-  https://cdn.jsdelivr.net/gh/pr0x77/experimental-ru-adslists/refs/heads/main/rules/ru-ads.txt
+  https://cdn.jsdelivr.net/gh/pr0x77/experimental-ru-adslists/refs/heads/main/rules/RuBlock-Origin.txt
 - **raw (fallback):**  
-  https://raw.githubusercontent.com/pr0x77/experimental-ru-adslists/refs/heads/main/rules/ru-ads.txt
+  https://raw.githubusercontent.com/pr0x77/experimental-ru-adslists/refs/heads/main/rules/RuBlock-Origin.txt
