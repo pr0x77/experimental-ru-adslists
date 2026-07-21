@@ -111,3 +111,4 @@
 .yandexcloud.net
 .yandexmetrica.com
 .yastatic.net
+.appsflyersdk.com
