@@ -52,6 +52,7 @@
 .img2.24smi.net
 .imgsmail.ru
 .ingest.us.sentry.io
+.ipify.org
 .leadback.ru
 .liveinternet.ru
 .log.strm.yandex.ru
@@ -112,4 +113,3 @@
 .yandexcloud.net
 .yandexmetrica.com
 .yastatic.net
-.ipify.org
