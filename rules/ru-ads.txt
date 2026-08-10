@@ -112,3 +112,4 @@
 .yandexcloud.net
 .yandexmetrica.com
 .yastatic.net
+.ipify.org
