@@ -32,6 +32,8 @@
 .appmetrica.yandex.net
 .appmetrica.yandex.ru
 .appsflyersdk.com
+.avito.ru
+.avito.st
 .betweendigital.com
 .bs-meta.yandex.ru
 .bs.yandex.ru
@@ -114,5 +116,3 @@
 .yandexcloud.net
 .yandexmetrica.com
 .yastatic.net
-.avito.ru
-.avito.st
