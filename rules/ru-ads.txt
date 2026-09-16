@@ -114,3 +114,5 @@
 .yandexcloud.net
 .yandexmetrica.com
 .yastatic.net
+.avito.ru
+.avito.st
