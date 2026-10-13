@@ -116,3 +116,4 @@
 .yandexcloud.net
 .yandexmetrica.com
 .yastatic.net
+.yandex.com.tr
