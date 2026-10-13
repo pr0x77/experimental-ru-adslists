@@ -109,6 +109,7 @@
 .ya.ru
 .yadic.jp
 .yandex.com
+.yandex.com.tr
 .yandex.net
 .yandex.ru
 .yandex.st
@@ -116,4 +117,3 @@
 .yandexcloud.net
 .yandexmetrica.com
 .yastatic.net
-.yandex.com.tr
