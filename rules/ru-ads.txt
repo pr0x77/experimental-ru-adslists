@@ -66,10 +66,10 @@
 .new-programmatic.com
 .ohmy.bid
 .ok.ru
+.openfpcdn.io
 .otm-r.com
 .ozon.kz
 .ozonru.me
-.openfpcdn.io
 .programmatica.com
 .pxltag.com
 .rambler-co.ru
