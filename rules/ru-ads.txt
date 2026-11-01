@@ -69,6 +69,7 @@
 .otm-r.com
 .ozon.kz
 .ozonru.me
+.openfpcdn.io
 .programmatica.com
 .pxltag.com
 .rambler-co.ru
