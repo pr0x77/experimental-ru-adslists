@@ -1,12 +1,9 @@
 # --- Russian Ad Networks ---
 # --- Russian Analytics 
-# --- Russian Platforms Tracking ---
-# --- Yandex Ads 
-# --- Дополнительный трекинг и аналитика ---
-# --- Специфика мобильных приложений (App Tracking) ---
+# --- Russian Platforms Tracking --- 
 # ===== Russian Ads 
-# Action defined per rule
 # Encoding: UTF-8
+# Action defined per rule: DOMAIN-SET
 # Policy in app: REJECT
 .24smi.net
 .2xclick.ru
@@ -50,9 +47,12 @@
 .icmp0.ru
 .imgsmail.ru
 .ingest.us.sentry.io
+.hsmedia.ru
+.kimberlite.io
 .leadback.ru
 .liveinternet.ru
 .lptracker.ru
+.iportal.ru
 .mail.ru
 .mds.yandex.net
 .mediametrics.ru
@@ -62,6 +62,7 @@
 .my.com
 .mytarget.com
 .mytarget.ru
+.mediadash.ru
 .new-programmatic.com
 .ohmy.bid
 .ok.ru
