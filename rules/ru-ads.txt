@@ -34,9 +34,9 @@
 .bumlam.com
 .buzzoola.com
 .calltracking.ru
+.clarity.ms
 .comagic.ru
 .crashlytics.com
-.clarity.ms
 .diginetica.net
 .directadvert.ru
 .doubleclick.net
