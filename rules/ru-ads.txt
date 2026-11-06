@@ -50,7 +50,6 @@
 .icmp0.ru
 .imgsmail.ru
 .ingest.us.sentry.io
-.ipify.org
 .leadback.ru
 .liveinternet.ru
 .lptracker.ru
