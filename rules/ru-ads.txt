@@ -36,6 +36,7 @@
 .calltracking.ru
 .comagic.ru
 .crashlytics.com
+.clarity.ms
 .diginetica.net
 .directadvert.ru
 .doubleclick.net
