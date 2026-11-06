@@ -5,8 +5,8 @@
 # Encoding: UTF-8
 # Action defined per rule: DOMAIN-SET
 # Policy in app: REJECT
-.24smi.net
 .24smi.info
+.24smi.net
 .24smi.press
 .2xclick.ru
 .acint.net
