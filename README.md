@@ -26,10 +26,16 @@ A curated collection of rule-sets for **Shadowrocket**, **Surge**, and **Stash**
   `https://raw.githubusercontent.com/pr0x77/experimental-ru-adslists/main/rules/ru-ads.txt`
 
 ### 🍏 Apple All
-- **jsDelivr (CDN):**  
-  `https://cdn.jsdelivr.net/gh/pr0x77/experimental-ru-adslists@main/rules/apple-all.txt`
-- **raw (fallback):**  
-  `https://raw.githubusercontent.com/pr0x77/experimental-ru-adslists/main/rules/apple-all.txt`
+- **jsDelivr (CDN):**
+  
+   ```
+   https://cdn.jsdelivr.net/gh/pr0x77/experimental-ru-adslists@main/rules/apple-all.txt
+   ```
+   
+- **raw (fallback):**
+  ``` 
+   https://raw.githubusercontent.com/pr0x77/experimental-ru-adslists/main/rules/apple-all.txt
+  ```
 
 ### 🚫 RU uBlock Origin
 - **jsDelivr (CDN):**  
@@ -44,9 +50,9 @@ A curated collection of rule-sets for **Shadowrocket**, **Surge**, and **Stash**
   ```
   
 - **raw (fallback):**
-```
+  ```
   https://raw.githubusercontent.com/pr0x77/experimental-ru-adslists/main/rules/multicast.list
-```
+  ```
 
 ---
 
@@ -54,5 +60,5 @@ A curated collection of rule-sets for **Shadowrocket**, **Surge**, and **Stash**
 
 Add this line to your main configuration file (`.conf`):
 
-```text
-RULE-SET,https://cdn.jsdelivr.net/gh/pr0x77/experimental-ru-adslists@main/rules/multicast.list,REJECT
+   ```text 
+   RULE-SET,https://cdn.jsdelivr.net/gh/pr0x77/experimental-ru-adslists@main/rules/multicast.list,REJECT
