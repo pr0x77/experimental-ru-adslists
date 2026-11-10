@@ -1,0 +1,30 @@
+# TITLE: Multicast & Special-Use IP Ranges
+# DESCRIPTION: Rule set for blocking local-network multicast/broadcast and special-use IP ranges. Use with REJECT (for privacy) or DIRECT (if local discovery is needed). Compatible with Shadowrocket / Surge (RULE-SET format).
+# UPDATED: 2026-11-04
+# REPO: https://github.com/your-username/your-repo
+
+# --- SSDP (UPnP) ---
+# Smart TVs, speakers, Chromecast, etc.
+IP-CIDR,239.255.255.250/32
+
+# --- mDNS (Bonjour) ---
+# Printer discovery, Apple TV, AirPlay, etc.
+IP-CIDR,224.0.0.251/32
+
+# --- Multicast Range ---
+# Covers various local service discovery protocols
+IP-CIDR,224.0.0.0/4
+
+# --- Limited Broadcast Address ---
+# Sends to all devices in the local network
+IP-CIDR,255.255.255.255/32
+
+# --- Subnet Broadcast Address (adjust to your subnet if needed) ---
+# Prevents unnecessary gateway spam; update 192.168.1.255 to match your local network
+IP-CIDR,192.168.1.255/32
+
+# --- Documentation & Special-Use Ranges ---
+# Should never route to the public internet
+IP-CIDR,192.0.2.0/24
+IP-CIDR,198.51.100.0/24
+IP-CIDR,203.0.113.0/24
