@@ -1,6 +1,5 @@
 # 🛡️ Experimental RU Adslists
 Проект по созданию rule-листов для **Shadowrocket**, **Surge** и **Stash**.  
-Фокус: русская реклама, трекеры, аналитика.
 
 ---
 
