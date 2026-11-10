@@ -5,26 +5,26 @@
 
 # --- SSDP (UPnP) ---
 # Smart TVs, speakers, Chromecast, etc.
-IP-CIDR,239.255.255.250/32
+IP-CIDR,239.255.255.250/32,no-resolve
 
 # --- mDNS (Bonjour) ---
 # Printer discovery, Apple TV, AirPlay, etc.
-IP-CIDR,224.0.0.251/32
+IP-CIDR,224.0.0.251/32,no-resolve
 
 # --- Multicast Range ---
 # Covers various local service discovery protocols
-IP-CIDR,224.0.0.0/4
+IP-CIDR,224.0.0.0/4,no-resolve
 
 # --- Limited Broadcast Address ---
 # Sends to all devices in the local network
-IP-CIDR,255.255.255.255/32
+IP-CIDR,255.255.255.255/32,no-resolve
 
 # --- Subnet Broadcast Address (adjust to your subnet if needed) ---
 # Prevents unnecessary gateway spam; update 192.168.1.255 to match your local network
-IP-CIDR,192.168.1.255/32
+IP-CIDR,192.168.1.255/32,no-resolve
 
 # --- Documentation & Special-Use Ranges ---
 # Should never route to the public internet
-IP-CIDR,192.0.2.0/24
-IP-CIDR,198.51.100.0/24
-IP-CIDR,203.0.113.0/24
+IP-CIDR,192.0.2.0/24,no-resolve
+IP-CIDR,198.51.100.0/24,no-resolve
+IP-CIDR,203.0.113.0/24,no-resolve
