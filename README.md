@@ -38,10 +38,15 @@ A curated collection of rule-sets for **Shadowrocket**, **Surge**, and **Stash**
   `https://raw.githubusercontent.com/pr0x77/experimental-ru-adslists/main/rules/RuBlock-Origin.txt`
 
 ### 📡 Multicast & Special-IP
-- **jsDelivr (CDN):**  
-  `https://cdn.jsdelivr.net/gh/pr0x77/experimental-ru-adslists@main/rules/multicast.list`
-- **raw (fallback):**  
-  `https://raw.githubusercontent.com/pr0x77/experimental-ru-adslists/main/rules/multicast.list`
+- **jsDelivr (CDN):**
+  ```
+  https://cdn.jsdelivr.net/gh/pr0x77/experimental-ru-adslists@main/rules/multicast.list
+  ```
+  
+- **raw (fallback):**
+```
+  https://raw.githubusercontent.com/pr0x77/experimental-ru-adslists/main/rules/multicast.list
+```
 
 ---
 
