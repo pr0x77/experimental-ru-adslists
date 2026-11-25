@@ -1,36 +1,54 @@
-# TITLE: Multicast & Special-Use IP Ranges
-# DESCRIPTION: Rule set for blocking local-network multicast/broadcast and special-use IP ranges. Use with REJECT (for privacy) or DIRECT (if local discovery is needed). Compatible with Shadowrocket / Surge (RULE-SET format).
-# UPDATED: 2026-11-04
-# REPO: https://github.com/your-username/your-repo
+# TITLE: Local Network Isolation & Anti-Leak (Public Wi-Fi Shield)
+# DESCRIPTION: Blocks LAN scanning, multicast/broadcast discovery, special-use ranges, QUIC (UDP 443), and STUN/WebRTC probing. Attach ONLY with REJECT.
+# UPDATED: 2026-11-26
+# REPO: https://github.com/pr0x77/experimental-ru-adslists
 
-# --- SSDP (UPnP) ---
-# Smart TVs, speakers, Chromecast, etc.
-IP-CIDR,239.255.255.250/32,no-resolve
+# --- Private LAN Ranges (RFC 1918) ---
+# Prevents apps from scanning Wi-Fi neighbors, router admin panels, and comparing en0 vs utun routes
+IP-CIDR,10.0.0.0/8,no-resolve
+IP-CIDR,172.16.0.0/12,no-resolve
+IP-CIDR,192.168.0.0/16,no-resolve
 
-# --- mDNS (Bonjour) ---
-# Printer discovery, Apple TV, AirPlay, etc.
-IP-CIDR,224.0.0.251/32,no-resolve
+# --- Link-Local & Auto-Config (APIPA) ---
+# Blocks local interface probing
+IP-CIDR,169.254.0.0/16,no-resolve
+IP-CIDR,0.0.0.0/8,no-resolve
 
-# --- Multicast Range ---
-# Covers various local service discovery protocols
+# --- Carrier-Grade NAT (CGNAT) ---
+# Often used by mobile carriers and internal VPN meshes
+IP-CIDR,100.64.0.0/10,no-resolve
+
+# --- IPv4 Multicast & Broadcast (mDNS, SSDP, Bonjour, NetBIOS) ---
 IP-CIDR,224.0.0.0/4,no-resolve
-
-# --- Limited Broadcast Address ---
-# Sends to all devices in the local network
 IP-CIDR,255.255.255.255/32,no-resolve
 
-# --- Subnet Broadcast Address (adjust to your subnet if needed) ---
-# Prevents unnecessary gateway spam; update 192.168.1.255 to match your local network
-IP-CIDR,192.168.1.255/32,no-resolve
-
-# --- Documentation & Special-Use Ranges ---
-# Should never route to the public internet
+# --- Special-Use & Documentation Ranges (RFC 5737 / IANA) ---
+# Note: 198.18.0.0/15 is intentionally omitted so Fake-IP DNS mode stays functional
+IP-CIDR,192.0.0.0/24,no-resolve
 IP-CIDR,192.0.2.0/24,no-resolve
 IP-CIDR,198.51.100.0/24,no-resolve
 IP-CIDR,203.0.113.0/24,no-resolve
+IP-CIDR,240.0.0.0/4,no-resolve
 
-# --- Extra Protection: Block SSDP/UPnP Discovery on Port 1900 ---
-# Blocks UDP packets destined for port 1900 (SSDP), preventing apps from discovering local UPnP devices.
+# --- IPv6 Local, Link-Local & Multicast ---
+# Critical on iOS: blocks IPv6 Neighbor Discovery, Bonjour, and local SLAAC probing
+IP-CIDR6,fc00::/7,no-resolve
+IP-CIDR6,fe80::/10,no-resolve
+IP-CIDR6,ff00::/8,no-resolve
+
+# --- Local Discovery & File Sharing Protocols ---
+# SSDP/UPnP (1900), mDNS (5353), NetBIOS (137-139), SMB (445), LLMNR (5355)
 AND,((PROTOCOL,UDP),(DST-PORT,1900))
-AND,((PROTOCOL,UDP),(DST-PORT,443))
+AND,((PROTOCOL,UDP),(DST-PORT,5353))
+AND,((PROTOCOL,UDP),(DST-PORT,5355))
+DST-PORT,137
+DST-PORT,138
+DST-PORT,139
+DST-PORT,445
 
+# --- QUIC (HTTP/3) & STUN / WebRTC Anti-Leak ---
+# Forces TCP fallback (avoids UDP-over-TCP lag) and blocks STUN IP probing
+AND,((PROTOCOL,UDP),(DST-PORT,443))
+AND,((PROTOCOL,UDP),(DST-PORT,3478))
+AND,((PROTOCOL,UDP),(DST-PORT,19302))
+DST-PORT,5349
