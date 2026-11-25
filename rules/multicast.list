@@ -32,3 +32,5 @@ IP-CIDR,203.0.113.0/24,no-resolve
 # --- Extra Protection: Block SSDP/UPnP Discovery on Port 1900 ---
 # Blocks UDP packets destined for port 1900 (SSDP), preventing apps from discovering local UPnP devices.
 AND,((PROTOCOL,UDP),(DST-PORT,1900))
+AND,((PROTOCOL,UDP),(DST-PORT,443))
+
